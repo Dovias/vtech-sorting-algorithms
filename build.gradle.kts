@@ -12,6 +12,14 @@ java {
 	}
 }
 
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation("org.jetbrains:annotations:24.1.0")
+}
+
 application {
 	mainClass = "me.dovias.vtech.sort.Application"
 }
