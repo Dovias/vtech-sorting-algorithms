@@ -1,10 +1,12 @@
 package me.dovias.vtech.sort;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Application {
-	public static void main(String[] args) {
+	public static void main(@NotNull final String[] args) {
 		// Demonstration
 
 		SortingAlgorithm insertion = new InsertionSort();

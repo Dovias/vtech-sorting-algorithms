@@ -8,11 +8,11 @@ import java.util.List;
 public class ShellSort implements SortingAlgorithm {
 	private final static ListSequence DEFAULT_SEQUENCE = new HibbardListSequence();
 	@Override
-	public <T> void sort(@NotNull List<T> list, @NotNull Comparator<T> comparator) {
+	public <T> void sort(@NotNull final List<T> list, @NotNull final Comparator<T> comparator) {
 		this.sort(list, comparator, ShellSort.DEFAULT_SEQUENCE);
 	}
 
-	public <T> void sort(@NotNull List<T> list, @NotNull Comparator<T> comparator, @NotNull final ListSequence sequence) {
+	public <T> void sort(@NotNull final List<T> list, @NotNull final Comparator<T> comparator, @NotNull final ListSequence sequence) {
 		for (int i = sequence.getMaxIndex(list); i > 0; i--) {
 			for (int j = sequence.getNumber(i); j < list.size(); j++) {
 				T a = list.get(j);
