@@ -18,7 +18,7 @@ public class ShellSort implements SortingAlgorithm {
 				T a = list.get(j);
 
 				int k = j - i;
-				while (k >= i) {
+				while (k >= 0) {
 					T b = list.get(k);
 					if (comparator.compare(a, b) >= 0) {
 						break;
