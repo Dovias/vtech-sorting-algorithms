@@ -21,5 +21,5 @@ dependencies {
 }
 
 application {
-	mainClass = "me.dovias.vtech.sort.Application"
+	mainClass = "me.dovias.vtech.sort.BenchmarkApplication"
 }

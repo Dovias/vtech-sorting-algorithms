@@ -1,9 +1,5 @@
 package me.dovias.vtech.sort;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.util.List;
-
 public class HibbardListSequence implements ListSequence {
 	@Override
 	public int getNumber(final int index) {
@@ -11,7 +7,13 @@ public class HibbardListSequence implements ListSequence {
 	}
 
 	@Override
-	public int getMaxIndex(@NotNull final List<?> list) {
-		return (int)Math.sqrt(list.size());
+	public int getMaxIndex(final int length) {
+		int index = 0;
+		int gap = 0;
+		while (gap < length) {
+			gap = this.getNumber(++index);
+		}
+
+		return index;
 	}
 }

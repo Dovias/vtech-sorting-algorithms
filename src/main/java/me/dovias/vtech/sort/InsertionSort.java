@@ -6,9 +6,14 @@ import java.util.Comparator;
 import java.util.List;
 
 public class InsertionSort implements SortingAlgorithm {
+
 	@Override
-	public <T> void sort(@NotNull final List<T> list, @NotNull final Comparator<T> comparator) {
-		for (int i = 1; i < list.size(); i++) {
+	public <T> void sort(@NotNull List<T> list, @NotNull Comparator<T> comparator, float percentage) {
+		if (percentage > 1) {
+			percentage = 1;
+		}
+		int size = (int) (list.size() * percentage);
+		for (int i = 1; i < size; i++) {
 			T a = list.get(i);
 
 			int j = i - 1;
