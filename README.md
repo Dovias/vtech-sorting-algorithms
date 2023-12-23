@@ -1,5 +1,5 @@
 # vtech-sorting-algorithms
-vtech-data-structures is a project for my studies at VILNIUS TECH university. This project involves implementing 2 different types of sorting algorithms:
+vtech-sorting-algorithms is a project for my studies at VILNIUS TECH university. This project involves implementing 2 different types of sorting algorithms:
 - Insertion Sort
 - Shell Sort with Hibbard's sequence
 
